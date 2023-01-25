@@ -6,12 +6,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
 import { BasicNgsRevealComponent } from './pages/basic-ngs-reveal/basic-ngs-reveal.component';
+import { SequencerComponent } from './pages/sequencer/sequencer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    BasicNgsRevealComponent
+    BasicNgsRevealComponent,
+    SequencerComponent
   ],
   imports: [
     BrowserModule,
