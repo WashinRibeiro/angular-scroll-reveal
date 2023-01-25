@@ -1,27 +1,47 @@
 # ScrollReveal
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.10.
+Esse projeto foi construído para testar as possibilidades de trabalhar com a biblioteca [Scroll Reveal](https://scrollrevealjs.org/) que para Angular utilizaremos a documentaão do **ngx-scrollreveal** no link https://tinesoft.github.io/ngx-scrollreveal/home
 
-## Development server
+Para instalá-la basta rodarmos o comando: `npm install --save scrollreveal`
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+---
 
-## Code scaffolding
+No angular.json colocar o código:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+```
+"scripts": [
+  "../node_modules/scrollreveal/dist/scrollreveal.js"
+],
+```
 
-## Build
+---
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+No app.module.ts importe e declare o NgRevealModule:
+```
+import {NgsRevealModule} from 'ngx-scrollreveal';
 
-## Running unit tests
+@NgModule({
+  declarations: [AppComponent, ...],
+  imports: [NgsRevealModule],  
+  bootstrap: [AppComponent]
+})
+export class AppModule {
+}
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+---
 
-## Running end-to-end tests
+## USO DA BIBLIOTECA
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+A biblioteca é composta por duas diretivas principais: **ngsReveale** e **ngsRevealSet**.
 
-## Further help
+### Diretiva ngsReveal
+Essa diretiva é utilizada para revelar/ocultar *um único elemento DOM* durante a rolagem.
+```<div class="item" ngsReveal>..</div>```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Podemos fazer uma configuraão personalizada para a diretiva com um objeto de configuraões. Para configurar melhor podemos verificar o link de customizaão da própria biblioteca: https://scrollrevealjs.org/guide/customization.html
+
+
+### Diretiva ngsRevealSet
+Essa diretiva é utilizada para revelar/ocultar um *conjunto de elementos DOM* durante a rolagem.
+
