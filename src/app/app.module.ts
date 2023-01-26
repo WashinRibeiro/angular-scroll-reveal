@@ -7,13 +7,17 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
 import { BasicNgsRevealComponent } from './pages/basic-ngs-reveal/basic-ngs-reveal.component';
 import { SequencerComponent } from './pages/sequencer/sequencer.component';
+import { BasicNgsRevealsetComponent } from './pages/basic-ngs-revealset/basic-ngs-revealset.component';
+import { ConfigNgsRevealsetComponent } from './pages/config-ngs-revealset/config-ngs-revealset.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     BasicNgsRevealComponent,
-    SequencerComponent
+    SequencerComponent,
+    BasicNgsRevealsetComponent,
+    ConfigNgsRevealsetComponent
   ],
   imports: [
     BrowserModule,

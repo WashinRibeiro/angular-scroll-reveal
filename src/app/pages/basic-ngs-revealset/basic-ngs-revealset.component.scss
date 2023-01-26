@@ -1,0 +1,44 @@
+.itemset {
+  width: 100%;
+  height: 100vh;
+}
+
+.item {
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.item1 {
+  background-color: rgb(255, 6, 201);
+}
+
+.item2 {
+  background-color: rgb(255, 0, 0);
+}
+
+.item3 {
+  background-color: rgb(240, 139, 6);
+}
+
+.item4 {
+  background-color: rgb(0, 132, 255);
+}
+
+.item5 {
+  background-color: rgb(21, 255, 0);
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
