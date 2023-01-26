@@ -30,9 +30,7 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": [
-              "../node_modules/scrollreveal/dist/scrollreveal.js"
-            ]
+            "scripts": []
           },
           "configurations": {
             "production": {
