@@ -20,16 +20,27 @@ main {
     }
 
     li {
-      font-size: 50px;
+      font-size: 35px;
       font-weight: bold;
       transition: all 0.5s;
       line-height: normal;
 
       &:hover {
-        // border-bottom: solid 2px white;
         transition: all 0.5s;
         padding-left: 30px;
       }
     }
   }
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  padding: 15px 6%;
+  background-color: white;
+  z-index: 999;
+  width: 100%;
+  text-align: center;
+  border-top-right-radius: 25px;
+  border-top-left-radius: 25px;
 }
